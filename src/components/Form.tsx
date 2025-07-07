@@ -86,6 +86,8 @@ const Form = ({
 
     const validationErrors = validation();
 
+    console.log();
+
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
@@ -155,7 +157,11 @@ const Form = ({
               מאשר קבלת דיוור ותוכן שיווקי ופרסומי מהחברות השונות בקבוצת באמצעות
               סמס, וואטסאפ, דואר אלקטרוני, וחיוג אוטומטי. רשימת *החברות המפורטות
               במדיניות פרטיות של האתר
-              <Checkbox id="newsletter" name="newsletter" />
+              <Checkbox
+                id="newsletter"
+                name="newsletter"
+                onChange={handleChange}
+              />
             </Label>
           </InputContainer>
         </div>
