@@ -1,0 +1,18 @@
+/* Label */
+.label {
+  font-size: var(--text-14);
+  font-weight: 600;
+}
+
+.label.checkbox {
+  flex-direction: row-reverse;
+  font-weight: 400;
+}
+
+.label:not(.select) {
+  display: flex;
+}
+
+.label:not(.checkbox):not(.select) {
+  padding-inline-start: var(--input-spacing);
+}

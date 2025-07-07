@@ -1,0 +1,32 @@
+/* Input container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Base input styles */
+.input {
+  width: 100%;
+  padding: 0 var(--input-spacing) var(--input-spacing);
+  font-size: var(--text-24);
+  line-height: var(--text-24);
+  color: var(--foreground);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--foreground);
+  outline: none;
+  transition: border-color 0.2s ease;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Input placeholder */
+.input::placeholder {
+  color: var(--foreground);
+  opacity: 1;
+}
+
+/* Error state */
+.input-error {
+  border-bottom-color: var(--destructive);
+}

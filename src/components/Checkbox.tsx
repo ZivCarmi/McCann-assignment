@@ -1,3 +1,5 @@
+import "./checkbox.css";
+
 interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
 const Checkbox: React.FC<CheckboxProps> = ({ ...props }) => {

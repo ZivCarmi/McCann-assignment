@@ -1,0 +1,44 @@
+/* Minimal checkbox styles */
+.checkbox-minimal {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hide default checkbox */
+.checkbox-minimal input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox */
+.checkbox-minimal .checkmark {
+  position: relative;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-inline-end: 10px;
+  background-color: transparent;
+  border: 1px solid var(--foreground);
+  transition: all 0.2s ease;
+}
+
+/* Checked state */
+.checkbox-minimal input[type="checkbox"]:checked + .checkmark {
+  border-color: #ffffff;
+}
+
+/* Checkmark icon */
+.checkbox-minimal input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 2px;
+  height: 6px;
+  border: solid var(--foreground);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
