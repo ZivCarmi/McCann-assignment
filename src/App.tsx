@@ -1,7 +1,7 @@
 import { useState } from "react";
 import EntryContent from "./components/EntryContent";
 import ExitModal from "./components/ExitModal";
-import Form from "./components/form/Form";
+import Form from "./components/Form";
 import ThankYou from "./components/ThankYou";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       ) : (
         <>
           <EntryContent />
-          <Form isSuccess={isSuccess} setIsSuccess={setIsSuccess} />
+          <Form setIsSuccess={setIsSuccess} />
         </>
       )}
     </main>

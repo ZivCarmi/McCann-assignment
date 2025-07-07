@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Button from "../Button";
-import Checkbox from "../Checkbox";
-import ErrorMessage from "../ErrorMessage";
-import Input, { InputContainer } from "../Input";
-import Label from "../Label";
-import Select from "../Select";
+import Button from "./Button";
+import Checkbox from "./Checkbox";
+import ErrorMessage from "./ErrorMessage";
+import Input, { InputContainer } from "./Input";
+import Label from "./Label";
+import Select from "./Select";
 import "./form.css";
 
 type FieldError = keyof typeof errorsState;
@@ -26,10 +26,8 @@ const errorsState = {
 };
 
 const Form = ({
-  isSuccess,
   setIsSuccess,
 }: {
-  isSuccess: boolean;
   setIsSuccess: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const [fields, setFields] = useState(initialState);
