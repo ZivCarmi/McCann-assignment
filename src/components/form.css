@@ -92,6 +92,7 @@
 
 /* Base input styles */
 .input {
+  width: 100%;
   padding: 0 var(--input-spacing) var(--input-spacing);
   font-size: var(--text-24);
   line-height: var(--text-24);
