@@ -22,7 +22,6 @@
 
 /* Label */
 .label {
-  display: flex;
   font-size: var(--text-14);
   font-weight: 600;
 }
@@ -32,7 +31,11 @@
   font-weight: 400;
 }
 
-.label:not(.checkbox) {
+.label:not(.select) {
+  display: flex;
+}
+
+.label:not(.checkbox):not(.select) {
   padding-inline-start: var(--input-spacing);
 }
 
